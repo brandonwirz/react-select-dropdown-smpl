@@ -10,8 +10,8 @@ const options = [
 
 function App() {
   return (
-    <div class="dropdown">
-      <div class="content">
+    <div className="dropdown">
+      <div className="content">
         <Select options={options} />
       </div>
     </div>
