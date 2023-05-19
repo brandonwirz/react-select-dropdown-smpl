@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import Select from "react-select";
 
 const options = [
@@ -7,29 +8,14 @@ const options = [
   { value: "vanilla", label: "Vanilla" },
 ];
 
-// const App = () => <Select options={options} />;
-const styles = {
-  myDiv: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: "20px",
-  },
-  widthWide: {
-    width: "400px",
-  },
-};
-// function App() {
-//   return (
-//     <div style={styled}>
-//       <Select options={options} />
-//     </div>
-//   );
-// }
-const App = () => (
-  <div style={styles.myDiv}>
-    <Select style={styles.widthWide} options={options} />
-  </div>
-);
+function App() {
+  return (
+    <div class="dropdown">
+      <div class="content">
+        <Select options={options} />
+      </div>
+    </div>
+  );
+}
 
 export default App;
